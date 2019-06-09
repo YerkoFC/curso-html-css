@@ -1,0 +1,201 @@
+body{
+    background:  #ffffff  ;
+    font-family: 'poppins', sans-serif;
+    /*dejar margin y padding en 0 debido a que todos los navegadores tienen un margen o padding por defecto*/
+    margin: 0px;
+    padding: 0px;
+}   
+
+.contenedor{
+    width: 90%;
+    max-width: 1300px;
+    margin: auto;
+}
+
+header{
+    /*vh: viewport heigt, significa que el header tendra la misma altura que la pantalla*/
+    /*vw: viewport width, significia que el header tendra el mismo ancho que la pantalla*/
+    height: 100vh;
+    /*Se le da un color gradiente encima del fondo*/
+    background: linear-gradient(rgba(84, 93, 220, .9),rgba(96, 171, 245, .9)),url(imagenes/fondo.jpg) left no-repeat;
+    /*cover sirve para darle al fondo el tamaño de la pantalla*/
+    background-size: cover;
+}
+
+#contenedor-menu{
+    display: flex;
+    /*separa los contenidos*/
+    justify-content: space-between;
+ 
+}
+
+.contenedor-titulo{
+    margin: 18vh 0;
+    /*es lo mismo que*/
+    /*
+    margin-top: 18vh;
+    margin-right: 0;
+    margin-bottom: 18vh;
+    margin-left: 0;
+    */
+}
+.contenedor-titulo h1 {
+    color: #ffffff;
+    font-size: 60px;
+    margin-bottom: 0px;
+}
+.contenedor-titulo{
+    text-align: center;
+}
+.contenedor-titulo h2 {
+    color: #ffffff;
+    margin-top: 0;
+    font-size: 25px;
+}
+.contenedor-titulo a{
+    width: 128px;
+    text-align: center;
+    /*inline-block le da propiedades de un elemento en bloque a uno que es en linea */
+    display: inline-block;
+    background:  #0357A2;
+    font-size: 14px;
+    color: #ffffff;
+    /*******************/
+    padding: 14px 24px;
+    /*es lo mismo que */
+    /*
+    padding-top: 14px;
+    padding-rigth: 24x;
+    padding-bottom: 24px;
+    padding-left: 14px;
+    */
+    /*Redondea las esquinas */
+    border-radius: 5px;
+}
+header .logo{
+    color: #ffffff;
+    padding-top: 20px;
+    font-size: 19px;
+    font-family: 'Righteous', cursive;
+}
+
+nav ul{
+    display: flex;
+    /*Deja al primer elemento al principio y los otros al final*/
+    justify-content: space-between;
+    padding-top: 20px;
+}
+
+nav ul li {
+    /*Se le quitan los puntos a la lista que hicimos como menu*/
+    list-style: none;
+    margin-right: 23px;
+    color: #ffffff;
+}
+#about h3{
+    text-align: center;
+    margin-bottom: 50px;
+    font-size: 55px;
+    /*peso de fuente, le da el tipo de letra, en este caso negrita*/
+    font-weight: bold;
+}
+#about img{
+    width: 430px;
+    height: 400px;
+}
+#about{
+    width: 90%;
+    max-width: 1300px;
+    height: 100vh;
+    margin: auto;
+}
+#about .about-text{
+    width: 50%;
+}
+#about  a{
+    width: 128px;
+    display: inline-block;
+    background:  #0357A2;
+    text-align: center;
+    font-size: 14px;
+    color: #ffffff;
+    padding: 14px 24px;
+    border-radius: 5px;
+    margin: 0 33vh;
+}
+
+.contenido{
+    display: flex;
+    justify-content: space-between;
+}
+
+.servicios h3{
+    text-align: center;
+    font-size: 55px;
+    font-weight: bold;
+}
+.contenedor-servicios .celeste{
+    /*to top indica que el gradiente irá hacia arriba*/
+    background-image: linear-gradient(to top , #2FACBD, #57BDCB);
+    box-shadow: 10px 10px 10px -8px rgba(0,0,0,0.75);
+    border-radius: 10px;
+}
+.contenedor-servicios .violeta{
+    background-image: linear-gradient(to top, #8D2EEC, #D3B1F5);
+    box-shadow: 10px 10px 10px -8px rgba(0,0,0,0.75);
+    border-radius: 10px;
+}
+.contenedor-servicios{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    color: #ffffff;
+}   
+.contenedor-servicios .servicio{
+    margin-bottom: 25px;
+    width: 29%;
+    position: relative;
+}
+ 
+.contenedor-servicios h4{
+    font-size: 25px;
+    padding-top: 20px;
+    padding-left: 20px;
+    margin-bottom: 0px;
+} 
+.contenedor-servicios p{
+    opacity: .8;
+    height: 100px;
+    padding-left: 20px;
+    padding-right: 20px;
+    
+}
+
+.contenedor-servicios .icono{
+    float: right top;
+} 
+    
+.servicio .waves{
+    position: absolute;
+    left:0;
+    bottom:0;
+}
+.trabajos h3{
+    text-align: center;
+    font-size: 55px;
+    font-weight: bold;
+}
+.contenedor-trabajos p{
+    text-align: center;
+}
+.trabajos img{
+    transform: scale(1);
+    transition: .3s;
+}
+.trabajos img:hover{
+    transform: scale(1.1);
+    transition: .3s;
+}
+.owl-nav{
+    font-size: 20px;
+}
